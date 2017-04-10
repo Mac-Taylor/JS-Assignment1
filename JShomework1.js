@@ -37,11 +37,11 @@ console.log(tallest)
 
 let startingPopulation = 200;
 
-let birthRate = 0.1;
+let birthRate = 1.1;
 
 let numberOfWeeks = 5;
 
-let currentPopulation = startingPopulation + (startingPopulation * birthRate) * numberOfWeeks;
+let currentPopulation = Math.floor(startingPopulation * (birthRate **= numberOfWeeks))
 
 console.log ('There will be ' + currentPopulation + ' Cherokee Hares after ' + numberOfWeeks + ' weeks.')
 
