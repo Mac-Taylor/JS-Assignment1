@@ -88,7 +88,13 @@ for (let start = 0; start < word2.length; start = start + 1) {
 end = end - 1; 
 }
 
-console.log(IsPalindrome)
+if (IsPalindrome === true) {
+    console.log ('Yes, "' + word2 + '" is a palindrome.')
+}
+
+else {
+    console.log('No, the word "' + word2 + '" is not a palindrome.')
+}
 
 // ================================================================================================
 
