@@ -19,16 +19,19 @@ console.log(tallest)
 
 // Problem #2 | Hangman Lite
 
+let word = 'banana';
+let letter = 'a';
+let hasletter = false;
+let numberOfLetters = 0;
 
+for (let loop = 0; loop < word.length; loop = loop +1) {
 
-
-
-
-
-
-
-
-
+    if (word[loop] === letter) {
+        hasletter === true;
+        ++numberOfLetters;
+    }
+}
+console.log('Yes, the letter "' + letter + '" appears ' + numberOfLetters + ' times in the word.');
 
 
 // ================================================================================================
