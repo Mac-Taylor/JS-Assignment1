@@ -19,20 +19,27 @@ console.log(tallest)
 
 // Problem #2 | Hangman Lite
 
-let word = 'banana';
-let letter = 'a';
+let word1 = 'orangutan';
+let letter = 'g';
 let hasletter = false;
 let numberOfLetters = 0;
 
-for (let loop = 0; loop < word.length; loop = loop +1) {
+for (let loop = 0; loop < word1.length; loop = loop +1) {
 
-    if (word[loop] === letter) {
-        hasletter === true;
+    if (word1[loop] === letter) {
+        hasletter = true;
         ++numberOfLetters;
     }
 }
-console.log('Yes, the letter "' + letter + '" appears ' + numberOfLetters + ' times in the word.');
 
+if (hasletter === true) {
+    console.log('Yes, the letter "' + letter + '" appears ' + numberOfLetters + ' times in the word.');
+}
+
+else {
+    hasletter === false;
+    console.log('No, the letter "' + letter + '" does not appear in the word.');
+}
 
 // ================================================================================================
 
@@ -70,12 +77,12 @@ console.log(answer)
 
 // Problem #5 | Finding Palindromes
 
-let word = 'racecar';
-let end = word.length - 1;
+let word2 = 'racecar';
+let end = word2.length - 1;
 let IsPalindrome = true;
 
-for (let start = 0; start < word.length; start = start + 1) {
-    if (word[start] !== word[end]) {
+for (let start = 0; start < word2.length; start = start + 1) {
+    if (word2[start] !== word2[end]) {
         IsPalindrome = false;
     }
 end = end - 1; 
